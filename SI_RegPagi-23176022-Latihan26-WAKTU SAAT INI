@@ -1,0 +1,35 @@
+/*
+
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+*/
+package latihan;
+/**
+*
+
+@author LENOVO
+NAMA: Hasna Durrotul Hikmah
+KELAS: PBO1
+NIM: 23176022
+PRODI: Sistem Informasi
+SEMESTER: 3
+Deskripsi Program: WAKTU SAAT INI
+*/
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+
+public class latihan26 {
+public static void main(String[] args) {
+// Mendapatkan waktu saat ini
+LocalDateTime sekarang = LocalDateTime.now();
+
+    // Format yang diinginkan: "EEEE, dd MMM yyyy HH:mm:ss"
+    DateTimeFormatter formatWaktu = DateTimeFormatter.ofPattern("EEEE, dd MMM yyyy HH:mm:ss", new Locale("id", "ID"));
+    
+    // Menampilkan waktu saat ini dalam format yang ditentukan
+    String waktuSekarang = sekarang.format(formatWaktu);
+    System.out.println("Hari ini adalah hari : " + waktuSekarang);
+    
+}
+}
